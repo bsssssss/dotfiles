@@ -1,42 +1,54 @@
-# ---------------- PATH ----------------
-
+# PATH
+#
 path=(
   $path
   $HOME/.cargo/bin
   $HOME/.pyenv/bin
 )
-
 typeset -U path
 export PATH
-
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
-# ---------------- CONF ----------------
-
+# PLUGINS
+#
 plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions
 )
 
-if type brew &>/dev/null
-then
-  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-  autoload -Uz compinit
-  compinit
-fi
+# AUTOCOMPLETION
+#
+# initialize autocompletion
+autoload -U compinit
+compinit
+
+# history setup
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+HISTFILE="$HOME/.zsh_history"
+SAVEHIST=1000
+HISTSIZE=999
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
+
 
 COMPLETION_WAITING_DOTS="true"
 
+setopt always_to_end # When completing a word, move the cursor to the end of the word
+
+# PROMPT
+#
 autoload -U promptinit; promptinit
 prompt pure
 
-# ---------------- ENV VARS ----------------
-
 set -o vi
 
+# VARIABLES
+#
 export VISUAL=nvim
 export EDITOR=nvim
+export ANTHROPIC_API_KEY=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
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -46,28 +58,27 @@ export NVM_DIR="$HOME/.nvm"
 export JUCE_DIR="$HOME/Dev/frameworks/JUCE/install"
 export JUCE_HOST="$HOME/git/JUCE/cmake-build/extras/AudioPluginHost/AudioPluginHost_artefacts/AudioPluginHost.app/Contents/MacOS/AudioPluginHost"
 
-# Set Options
-setopt always_to_end # When completing a word, move the cursor to the end of the word
-setopt share_history          # share history between different instances of the shell
-HISTFILE=${HOME}/.zsh_history
-HISTSIZE=100000
-SAVEHIST=${HISTSIZE}
-
-# ---------------- PYTHON VENV ----------------
-
+# PYTHON
+#
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
-# ---------------- GHCUP ----------------
-
+# GHC
+#
 [ -f "/Users/bss/.ghcup/env" ] && . "/Users/bss/.ghcup/env" # ghcup-env. $HOME/.ghcup/env
 
-# ---------------- SOURCING ----------------
-
+# SOURCE
+#
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# ---------------- ALIASES ----------------
-
+# ALIASES
+#
 alias vi=nvim
+alias ls=lsd
+alias ll="ls -la"
+
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
