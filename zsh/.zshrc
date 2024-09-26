@@ -4,6 +4,7 @@ path=(
   $path
   $HOME/.cargo/bin
   $HOME/.pyenv/bin
+  $PATH:./node_modules/.bin
 )
 typeset -U path
 export PATH
@@ -63,6 +64,7 @@ export JUCE_HOST="$HOME/git/JUCE/cmake-build/extras/AudioPluginHost/AudioPluginH
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+export PYTHON=$(which python)
 
 # GHC
 #
@@ -78,6 +80,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 alias vi=nvim
 alias ls=lsd
 alias ll="ls -la"
+alias nv='NVIM_APPNAME=nvim_test nvim'
 
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
