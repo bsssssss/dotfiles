@@ -78,6 +78,7 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ALIASES
 #
 alias vi=nvim
+alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
 alias ls=lsd
 alias ll="ls -la"
 alias cervo="cd ~/Dropbox/obsidian/cerveau2.1"
