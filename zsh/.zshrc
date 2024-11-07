@@ -79,9 +79,13 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 #
 alias vi=nvim
 alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
+
 alias ls=lsd
 alias ll="ls -la"
+
 alias cervo="cd ~/Dropbox/obsidian/cerveau2.1"
+
+alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
 
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
