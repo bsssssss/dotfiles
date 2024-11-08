@@ -11,8 +11,25 @@ def handle_result(args: list[str], answer: str, target_window_id: int, boss: Bos
 
     w = boss.window_id_map.get(target_window_id)
 
-    if w is not None:
-        boss.call_remote_control(
-            w, ('launch', '--type=window', '--location=hsplit', '--cwd=current'))
+    if w is None or not args:
+        return
 
-        boss.call_remote_control(w, ('action', 'resize_window'))
+    commands = {
+        'h': [
+            ('launch', '--type=window', '--location=hsplit',
+             '--cwd=current', '--bias=30')
+        ],
+        'v': [
+            ('launch', '--type=window', '--location=vsplit',
+             '--cwd=current', '--bias=50')
+        ]
+    }
+
+    command_list = commands.get(args[1])
+
+    if command_list is None:
+        print("Invalid argument, use 'h' or 'v'")
+        return
+
+    for command in command_list:
+        boss.call_remote_control(w, command)
