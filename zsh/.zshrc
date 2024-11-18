@@ -1,14 +1,17 @@
 # PATH
 #
 path=(
-  $path
   $HOME/.cargo/bin
   $HOME/.pyenv/bin
+  $HOME/.local/bin
   $PATH:./node_modules/.bin
+  $path
 )
 typeset -U path
 export PATH
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
+
+export TIDAL_PATH="$HOME/Code/projects/tidal/src/Sound/Tidal"
 
 # PLUGINS
 #
