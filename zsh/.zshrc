@@ -5,6 +5,7 @@ path=(
   $HOME/.pyenv/bin
   $HOME/.local/bin
   $PATH:./node_modules/.bin
+  $HOME/.pyenv/shims/python3
   $path
 )
 typeset -U path
@@ -12,6 +13,8 @@ export PATH
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 
 export TIDAL_PATH="$HOME/Code/projects/tidal/src/Sound/Tidal"
+export JAVA_HOME=$(/usr/libexec/java_home)
+# export DYLD_FALLBACK_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_FALLBACK_LIBRARY_PATH"
 
 # PLUGINS
 #
@@ -70,25 +73,21 @@ eval "$(pyenv virtualenv-init -)"
 export PYTHON=$(which python)
 
 # GHC
-#
 [ -f "/Users/bss/.ghcup/env" ] && . "/Users/bss/.ghcup/env" # ghcup-env. $HOME/.ghcup/env
 
 # SOURCE
-#
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ALIASES
-#
 alias vi=nvim
 alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
-
-alias ls=lsd
-alias ll="ls -la"
-
+# alias ls=lsd
+alias ll="lsd -la"
 alias cervo="cd ~/Dropbox/obsidian/cerveau2.1"
-
 alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
+alias vpdf='zathura "$@" & disown'
+alias tree='tree -C'
 
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
@@ -97,9 +96,14 @@ bindkey '\e[B' history-search-forward
 # FZF
 source <(fzf --zsh)
 
+# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export FZF_DEFAULT_OPTS='--height 10% --layout default --color=bg+:#2a283e,gutter:-1,pointer:-1,info:#95b1ac,fg:#6e6a86'
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+# export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
 
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
@@ -109,11 +113,32 @@ _fzf_compgen_dir() {
   fd --type d --hidden --follow --exclude ".git" . "$1"
 }
 
+fzf-history-widget-custom() {
+    local selected
+    if selected=$(fc -rl 1 | awk '{ cmd=$0; sub(/^[ \t]*[0-9]+\**[ \t]+/, "", cmd); if (!seen[cmd]++) print $0 }' |
+        FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse --bind=ctrl-r:toggle-sort $FZF_DEFAULT_OPTS" fzf); then
+        BUFFER=$(echo "$selected" | sed 's/^[0-9 ]*\*\{0,1\}[[:space:]]*//')
+        CURSOR=$#BUFFER
+        zle reset-prompt
+    fi
+}
+zle -N fzf-history-widget-custom
+bindkey '^R' fzf-history-widget-custom
+
 source ~/Code/git/fzf-git.sh/fzf-git.sh 
 
-# BAT
+# ZOXIDE
+eval "$(zoxide init zsh)"
 
+# BAT
 export BAT_THEME="Visual Studio Dark+"
+
+# POMODORO
+tea() {
+  timer "${1:-3m}" && terminal-notifier -message 'Chronos'\
+    -title 'Le thé !'\
+    -appIcon '/Users/bss/Pictures/tea-cup.png'
+}
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
