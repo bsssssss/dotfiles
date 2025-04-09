@@ -6,14 +6,18 @@ path=(
   $HOME/.local/bin
   $PATH:./node_modules/.bin
   $HOME/.pyenv/shims/python3
+  $HOME/Code/git/emsdk
+  $HOME/Code/git/emsdk/upstream/emscripten
   $path
 )
 typeset -U path
 export PATH
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
+export EMSDK_QUIET=1
 
 export TIDAL_PATH="$HOME/Code/projects/tidal/src/Sound/Tidal"
 export JAVA_HOME=$(/usr/libexec/java_home)
+export TOOLCHAIN_PATH=/Users/bss/Code/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 # export DYLD_FALLBACK_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_FALLBACK_LIBRARY_PATH"
 
 # PLUGINS
@@ -143,3 +147,5 @@ tea() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
