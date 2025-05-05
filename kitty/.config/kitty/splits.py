@@ -26,7 +26,7 @@ def handle_result(
         ],
         'v': [
             ('launch', '--type=window', '--location=vsplit',
-             '--cwd=current', '--bias=50')
+             '--cwd=current', '--bias=40')
         ]
     }
 
