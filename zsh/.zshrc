@@ -19,8 +19,7 @@ export CMAKE_EXPORT_COMPILE_COMMANDS=1
 export TIDAL_PATH="$HOME/Code/projects/tidal/src/Sound/Tidal"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export TOOLCHAIN_PATH=/Users/bss/Code/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
-# export DYLD_FALLBACK_LIBRARY_PATH="$(brew --prefix)/lib:$DYLD_FALLBACK_LIBRARY_PATH"
- export MANPAGER="nvim +Man!"
+export MANPAGER="nvim +Man!"
 
 # PLUGINS
 #
@@ -101,14 +100,10 @@ bindkey '\e[B' history-search-forward
 
 # FZF
 source <(fzf --zsh)
-
-# [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 export FZF_DEFAULT_OPTS='--height 10% --layout default --color=bg+:#343B4C,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#677598'
-export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
-# export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
+# export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 _fzf_compgen_path() {
   fd --hidden --follow --exclude ".git" . "$1"
