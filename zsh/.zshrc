@@ -151,5 +151,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
-
-export ANTHROPIC_API_KEY=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
