@@ -12,6 +12,7 @@ path=(
 )
 typeset -U path
 export PATH
+export XDG_CONFIG_HOME="$HOME/.config"
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
