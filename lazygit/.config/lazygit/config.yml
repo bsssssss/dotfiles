@@ -1,0 +1,6 @@
+gui:
+  theme:
+    inactiveBorderColor:
+      - '#677598'
+    selectedLineBgColor:
+      - '#2D3343'
