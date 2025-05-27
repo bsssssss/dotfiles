@@ -6,8 +6,8 @@ path=(
   $HOME/.local/bin
   $PATH:./node_modules/.bin
   $HOME/.pyenv/shims/python3
-  $HOME/Code/git/emsdk
-  $HOME/Code/git/emsdk/upstream/emscripten
+  $HOME/dev/git/emsdk
+  $HOME/dev/git/emsdk/upstream/emscripten
   $path
 )
 typeset -U path
@@ -17,9 +17,9 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 
-export TIDAL_PATH="$HOME/Code/projects/tidal/src/Sound/Tidal"
+export TIDAL_PATH="$HOME/dev/github.com/bsssssss/tidal/src/Sound/Tidal"
 export JAVA_HOME=$(/usr/libexec/java_home)
-export TOOLCHAIN_PATH=/Users/bss/Code/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
+export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 export MANPAGER="nvim +Man!"
 
 # PLUGINS
@@ -127,7 +127,7 @@ fzf-history-widget-custom() {
 zle -N fzf-history-widget-custom
 bindkey '^R' fzf-history-widget-custom
 
-source ~/Code/git/fzf-git.sh/fzf-git.sh 
+source ~/dev/git/fzf-git.sh/fzf-git.sh 
 
 # ZOXIDE
 eval "$(zoxide init zsh)"
