@@ -88,10 +88,11 @@ source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # ALIASES
 alias vi=nvim
 alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
+alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
+alias dotfiles="cd ~/.dotfiles"
 # alias ls=lsd
 alias ll="lsd -la"
 alias notes="cd ~/Vaults/Personal/1\ -\ Notes/"
-alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
 alias vpdf='zathura "$@" & disown'
 alias tree='tree -C'
 
