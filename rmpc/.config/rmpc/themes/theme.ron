@@ -19,7 +19,7 @@
     current_item_style: (fg: "white", bg: "#353A52", modifiers: "Bold"),
     borders_style: (fg: "#353A52"),
     highlight_border_style: (fg: "white"),
-    symbols: (song: "⏵", dir: "→", marker: "M", ellipsis: "..."),
+    symbols: (song: "⏵", dir: "→", marker: "⏺ ", ellipsis: "..."),
     progress_bar: (
         symbols: ["█", "█", " "],
         track_style: (fg: "#1e2030"),
@@ -28,9 +28,9 @@
     ),
     scrollbar: (
         symbols: ["│", "█", "▲", "▼"],
-        track_style: (fg: "dark_gray"),
-        ends_style: (fg: "dark_gray"),
-        thumb_style: (fg: "black"),
+        track_style: (fg: "#353A52"),
+        ends_style: (fg: "#353A52"),
+        thumb_style: (fg: "#353A52"),
     ),
     song_table_format: [
         (
