@@ -15,8 +15,8 @@
     status_update_interval_ms: 1000,
     select_current_song_on_change: false,
     album_art: (
-        method: Auto,
-        max_size_px: (width: 1200, height: 1200),
+        method: Kitty,
+        max_size_px: (width: 800, height: 800),
         disabled_protocols: ["http://", "https://"],
         vertical_align: Center,
         horizontal_align: Center,
@@ -46,7 +46,7 @@
             "c":       ToggleConsume,
             "v":       ToggleSingle,
             "b":       SeekBack,
-            "~":       ShowHelp,
+            "?":       ShowHelp,
             "I":       ShowCurrentSongInfo,
             "O":       ShowOutputs,
             "P":       ShowDecoders,
@@ -116,7 +116,10 @@
             name: "Queue",
             pane: Split(
                 direction: Horizontal,
-                panes: [(size: "40%", pane: Pane(AlbumArt)), (size: "60%", pane: Pane(Queue))],
+                panes: [
+                    ( size: "80%", pane: Pane(Queue)),
+                    ( size: "20%", pane: Pane(AlbumArt))
+                ],
             ),
         ),
         (
