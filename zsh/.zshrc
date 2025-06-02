@@ -21,6 +21,7 @@ export TIDAL_PATH="$HOME/dev/github.com/bsssssss/tidal/src/Sound/Tidal"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 export MANPAGER="nvim +Man!"
+export PATH="${PATH}:/Users/bss/.local/lib/python3.12/site-packages"
 
 # PLUGINS
 #
