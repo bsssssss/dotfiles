@@ -4,7 +4,7 @@
 (
     default_album_art_path: None,
     show_song_table_header: true,
-    draw_borders: false,
+    draw_borders: true,
     browser_column_widths: [20, 38, 42],
     background_color: None,
     text_color: None,
@@ -12,25 +12,25 @@
     modal_background_color: None,
     tab_bar: (
         enabled: true,
-        active_style: (fg: "#262b38", bg: "black", modifiers: "Bold"),
+        active_style: (fg: "white", bg: "#282828", modifiers: "Bold"),
         inactive_style: (fg: "black"),
     ),
     highlighted_item_style: (fg: "yellow", modifiers: "Bold"),
-    current_item_style: (fg: "white", bg: "#353A52", modifiers: "Bold"),
-    borders_style: (fg: "#353A52"),
+    current_item_style: (fg: "yellow", bg: "#282828", modifiers: "Bold"),
+    borders_style: (fg: "black"),
     highlight_border_style: (fg: "white"),
     symbols: (song: "⏵", dir: "→", marker: "⏺ ", ellipsis: "..."),
     progress_bar: (
         symbols: ["█", "█", " "],
-        track_style: (fg: "#1e2030"),
-        elapsed_style: (fg: "#353A52"),
-        thumb_style: (fg: "yellow", bg: "#1e2030"),
+        track_style: (fg: "#282828"),
+        elapsed_style: (fg: "black"),
+        thumb_style: (fg: "yellow", bg: "#282828"),
     ),
     scrollbar: (
         symbols: ["│", "█", "▲", "▼"],
-        track_style: (fg: "#353A52"),
-        ends_style: (fg: "#353A52"),
-        thumb_style: (fg: "#353A52"),
+        track_style: (fg: "#282828"),
+        ends_style: (fg: "#282828"),
+        thumb_style: (fg: "black"),
     ),
     song_table_format: [
         (
