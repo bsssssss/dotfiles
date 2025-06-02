@@ -12,18 +12,18 @@
     modal_background_color: None,
     tab_bar: (
         enabled: true,
-        active_style: (fg: "white", bg: "#282828", modifiers: "Bold"),
-        inactive_style: (fg: "black"),
+        active_style: (fg: "yellow", bg: "#282828", modifiers: "Bold"),
+        inactive_style: (fg: "dark_gray"),
     ),
     highlighted_item_style: (fg: "yellow", modifiers: "Bold"),
     current_item_style: (fg: "yellow", bg: "#282828", modifiers: "Bold"),
-    borders_style: (fg: "black"),
+    borders_style: (fg: "dark_gray"),
     highlight_border_style: (fg: "white"),
     symbols: (song: "⏵", dir: "→", marker: "⏺ ", ellipsis: "..."),
     progress_bar: (
-        symbols: ["█", "█", " "],
+        symbols: ["―", "█", "―"],
         track_style: (fg: "#282828"),
-        elapsed_style: (fg: "black"),
+        elapsed_style: (fg: "yellow"),
         thumb_style: (fg: "yellow", bg: "#282828"),
     ),
     scrollbar: (
@@ -68,16 +68,48 @@
             ),
             (
                 pane: Pane(TabContent),
+                borders: "ALL",
                 size: "100%",
             ),
+            // (
+            //     pane: Pane(Header),
+            //     borders: "ALL",
+            //     size: "3",
+            // ),
             (
-                pane: Pane(Header),
-                size: "3",
-            ),
-            (
-                pane: Pane(ProgressBar),
-                size: "1",
-            ),
+                size: "6",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (
+                            size: "10%",
+                            pane: Pane(AlbumArt),
+                        ),
+                        (
+                            size: "100%",
+                            pane: Split(
+                                direction: Vertical,
+                                borders: "ALL",
+                                panes: [
+                                    (
+                                        size: "100%",
+                                        pane: Pane(Header),
+                                    ),
+                                    (
+                                        size: "1",
+                                        pane: Pane(ProgressBar),
+                                    ),
+                                ]
+                            )
+                        )
+
+                    ]
+                )
+            )
+            //(
+            //    pane: Pane(ProgressBar),
+            //    size: "1",
+            //),
         ],
     ),
     header: (
