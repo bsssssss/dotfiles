@@ -4,7 +4,7 @@
 (
     default_album_art_path: None,
     show_song_table_header: true,
-    draw_borders: true,
+    draw_borders: false,
     browser_column_widths: [20, 38, 42],
     background_color: None,
     text_color: None,
@@ -21,7 +21,7 @@
     highlight_border_style: (fg: "white"),
     symbols: (song: "⏵", dir: "→", marker: "⏺ ", ellipsis: "..."),
     progress_bar: (
-        symbols: ["―", "█", "―"],
+        symbols: ["―", "┃", "―"],
         track_style: (fg: "#282828"),
         elapsed_style: (fg: "yellow"),
         thumb_style: (fg: "yellow", bg: "#282828"),
@@ -64,25 +64,20 @@
         panes: [
             (
                 pane: Pane(Tabs),
-                size: "3",
+                size: "2",
             ),
             (
                 pane: Pane(TabContent),
                 borders: "ALL",
                 size: "100%",
             ),
-            // (
-            //     pane: Pane(Header),
-            //     borders: "ALL",
-            //     size: "3",
-            // ),
             (
                 size: "6",
                 pane: Split(
                     direction: Horizontal,
                     panes: [
                         (
-                            size: "10%",
+                            size: "11",
                             pane: Pane(AlbumArt),
                         ),
                         (
@@ -106,10 +101,6 @@
                     ]
                 )
             )
-            //(
-            //    pane: Pane(ProgressBar),
-            //    size: "1",
-            //),
         ],
     ),
     header: (
