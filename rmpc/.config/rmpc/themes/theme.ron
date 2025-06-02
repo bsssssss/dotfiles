@@ -64,7 +64,7 @@
         panes: [
             (
                 pane: Pane(Tabs),
-                size: "2",
+                size: "1",
             ),
             (
                 pane: Pane(TabContent),
@@ -75,6 +75,7 @@
                 size: "6",
                 pane: Split(
                     direction: Horizontal,
+                    borders: "ALL",
                     panes: [
                         (
                             size: "11",
@@ -84,7 +85,6 @@
                             size: "100%",
                             pane: Split(
                                 direction: Vertical,
-                                borders: "ALL",
                                 panes: [
                                     (
                                         size: "100%",
@@ -107,9 +107,8 @@
         rows: [
             (
                 left: [
-                    // (kind: Text("["), style: (fg: "yellow", modifiers: "Bold")),
+                    (kind: Text(" ")),
                     (kind: Property(Status(StateV2(playing_label: "▶", paused_label: "pause", stopped_label: "Stopped"))), style: (fg: "yellow", modifiers: "Bold")),
-                    // (kind: Text("]"), style: (fg: "yellow", modifiers: "Bold"))
                 ],
                 center: [
                     (kind: Property(Song(Title)), style: (modifiers: "Bold"),
@@ -117,20 +116,34 @@
                     )
                 ],
                 right: [
-                    (kind: Property(Widget(Volume)), style: (fg: "white"))
+                    (kind: Text(" "),style: (fg: "#81a1c1")),
+                    (kind: Property(Status(RepeatV2(
+                                    on_label: "", off_label: "",
+                                    on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "black", modifiers: "Bold"))))),
+                    (kind: Text("   "),style: (fg: "#81a1c1")),
+                    (kind: Property(Status(RandomV2(
+                                    on_label: "", off_label: "",
+                                    on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "black", modifiers: "Bold"))))),
+                    (kind: Text("   "),style: (fg: "#81a1c1")),
+                    (kind: Property(Status(ConsumeV2(
+                                    on_label: "󰮯", off_label: "󰮯", oneshot_label: "󰮯󰇊",
+                                    on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "black", modifiers: "Bold"))))),
+                    (kind: Text("   "),style: (fg: "#81a1c1")),
+                    (kind: Property(Status(SingleV2(
+                                    on_label: "󰎤", off_label: "󰎦", oneshot_label: "󰇊", off_oneshot_label: "󱅊",
+                                    on_style: (fg: "yellow", modifiers: "Bold"), off_style: (fg: "black", modifiers: "Bold"))))),
+                    (kind: Text(" "),style: (fg: "#81a1c1")),
                 ]
             ),
             (
                 left: [
+                    (kind: Text(" ")),
                     (kind: Property(Status(Elapsed))),
-                    (kind: Text(" / ")),
+                    (kind: Text(" / "), style: (fg: "black")),
                     (kind: Property(Status(Duration))),
-                    // (kind: Text(" (")),
-                    // (kind: Property(Status(Bitrate))),
-                    // (kind: Text(" kbps)"))
                 ],
                 center: [
-                    (kind: Property(Song(Artist)), style: (fg: "yellow", modifiers: "Bold"),
+                    (kind: Property(Song(Artist)), style: (fg: "yellow"),
                         default: (kind: Text("Unknown"), style: (fg: "yellow", modifiers: "Bold"))
                     ),
                     (kind: Text(" - ")),
@@ -139,13 +152,10 @@
                     )
                 ],
                 right: [
-                    (
-                        kind: Property(Widget(States(
-                            active_style: (fg: "white", modifiers: "Bold"),
-                            separator_style: (fg: "white")))
-                        ),
-                        style: (fg: "dark_gray")
-                    ),
+                    (kind: Text("Vol: "), style: (fg: "dark_gray")),
+                    (kind: Property(Status(Volume)), style: (fg: "yellow")),
+                    (kind: Text(" %"), style: (fg: "yellow")),
+                    (kind: Text(" ")),
                 ]
             ),
         ],
