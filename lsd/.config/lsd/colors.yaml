@@ -15,7 +15,7 @@ date:
   older: black
 size:
   none: black
-  small: black
+  small: dark_grey
   medium: dark_grey
   large: dark_green
 inode:
