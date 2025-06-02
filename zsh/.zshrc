@@ -96,6 +96,7 @@ alias ll="lsd -la"
 alias notes="cd ~/Vaults/Personal/1\ -\ Notes/"
 alias vpdf='zathura "$@" & disown'
 alias tree='tree -C'
+alias gg="lazygit"
 
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
