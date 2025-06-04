@@ -1,0 +1,14 @@
+mouse-hide-while-typing = true
+
+cursor-color = #dddddd
+cursor-text = #000000
+
+window-decoration = none
+background-opacity = 0.8
+background-blur = true
+
+font-family = JetBrainsMono NFM Light
+font-style-italic = false
+font-size = 15
+
+background = #181818
