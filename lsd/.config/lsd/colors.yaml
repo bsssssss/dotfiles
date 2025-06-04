@@ -1,5 +1,5 @@
-user: black
-group: black
+user: 240
+group: 240
 permission:
   read: dark_green
   write: dark_yellow
@@ -10,14 +10,14 @@ permission:
   acl: dark_cyan
   context: cyan
 date:
-  hour-old: magenta
-  day-old: dark_grey
-  older: black
+  hour-old: dark_yellow
+  day-old: 244
+  older: 240
 size:
-  none: black
-  small: dark_grey
-  medium: dark_grey
-  large: dark_green
+  none: 242
+  small: 244
+  medium: 250
+  large: dark_yellow
 inode:
   valid: 13
   invalid: 245
