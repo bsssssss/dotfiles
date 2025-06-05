@@ -53,9 +53,12 @@ COMPLETION_WAITING_DOTS="true"
 setopt always_to_end # When completing a word, move the cursor to the end of the word
 
 # PROMPT
-#
-autoload -U promptinit; promptinit
-prompt pure
+# autoload -U promptinit; promptinit
+# zstyle ':prompt:pure:user' show yes
+# zstyle ':prompt:pure:host' show yes
+# prompt pure
+
+
 
 set -o vi
 
@@ -148,5 +151,7 @@ tea() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+eval "$(starship init zsh)"
 
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
