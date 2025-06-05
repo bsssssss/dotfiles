@@ -1,5 +1,6 @@
 format = """
-$username$hostname\
+$username\
+$hostname\
 $directory\
 $git_branch\
 $git_state\
@@ -11,7 +12,7 @@ $character"""
 
 
 [username]
-style_user = 'green'
+style_user = 'purple'
 # style_root = 'black bold'
 format = '[$user]($style)'
 disabled = false
@@ -19,7 +20,7 @@ show_always = true
 # aliases = { "corpuser034g" = "matchai" }
 
 [hostname]
-style = 'green'
+style = 'purple'
 format = '[$ssh_symbol$hostname]($style) '
 ssh_only = false
 aliases = {"Max-Macbook-Pro" = "@home"}
