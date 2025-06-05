@@ -12,3 +12,5 @@ font-style-italic = false
 font-size = 15
 
 background = #181818
+
+cursor-style-blink = true
