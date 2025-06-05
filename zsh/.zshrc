@@ -23,6 +23,8 @@ export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILI
 export MANPAGER="nvim +Man!"
 export PATH="${PATH}:/Users/bss/.local/lib/python3.12/site-packages"
 
+export TERM=xterm-256color
+
 # PLUGINS
 #
 plugins=(
@@ -58,9 +60,8 @@ setopt always_to_end # When completing a word, move the cursor to the end of the
 # zstyle ':prompt:pure:host' show yes
 # prompt pure
 
-
-
-set -o vi
+# set -o vi
+source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # VARIABLES
 #
