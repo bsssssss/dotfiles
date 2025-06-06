@@ -3,14 +3,17 @@ mouse-hide-while-typing = true
 cursor-color = #dddddd
 cursor-text = #000000
 
+macos-titlebar-proxy-icon = hidden
+
 window-decoration = none
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = true
 
 font-family = JetBrainsMono NFM Light
 font-style-italic = false
 font-size = 15
 
-background = #19191E
+background = #15151c
 
 cursor-style-blink = true
+cursor-invert-fg-bg = true
