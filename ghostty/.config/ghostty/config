@@ -11,9 +11,9 @@ background-blur = true
 
 font-family = JetBrainsMono NFM Light
 font-style-italic = false
-font-size = 15
+font-size = 16
 
-background = #15151c
+background = #131313
 
 cursor-style-blink = true
-cursor-invert-fg-bg = true
+cursor-invert-fg-bg = false
