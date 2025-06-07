@@ -23,8 +23,6 @@ export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILI
 export MANPAGER="nvim +Man!"
 export PATH="${PATH}:/Users/bss/.local/lib/python3.12/site-packages"
 
-# export TERM=xterm-256color
-
 # PLUGINS
 #
 plugins=(
