@@ -1,5 +1,5 @@
 [env]
-# TERM = "xterm-256color"
+TERM = "alacritty"
 
 [window]
 padding = {x = 4, y = 8}
@@ -10,6 +10,6 @@ blur = true
 decorations = "Buttonless"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Mono", style = "Thin" }
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
 italic = { style = "Light" }
 size = 16
