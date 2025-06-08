@@ -57,6 +57,7 @@ setopt always_to_end # When completing a word, move the cursor to the end of the
 # zstyle ':prompt:pure:user' show yes
 # zstyle ':prompt:pure:host' show yes
 # prompt pure
+eval "$(starship init zsh)"
 
 # set -o vi
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
@@ -106,8 +107,10 @@ bindkey '\e[B' history-search-forward
 
 # FZF
 source <(fzf --zsh)
-export FZF_DEFAULT_OPTS='--height 10% --layout default --color=bg+:#333333,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#666666'
-# export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_DEFAULT_OPTS='
+    --height 33% 
+    --layout default 
+    --color=bg+:#333333,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#666666'
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
@@ -134,6 +137,18 @@ bindkey '^R' fzf-history-widget-custom
 
 source ~/dev/git/fzf-git.sh/fzf-git.sh 
 
+autoload -U add-zsh-hook
+
+force_fzf_binding() {
+    bindkey '^R' fzf-history-widget-custom
+}
+
+# Hook qui s'exécute avant chaque prompt
+add-zsh-hook precmd force_fzf_binding
+
+# Hook qui s'exécute après chaque commande  
+# add-zsh-hook preexec force_fzf_binding
+
 # ZOXIDE
 eval "$(zoxide init zsh)"
 
@@ -150,7 +165,5 @@ tea() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
-
-eval "$(starship init zsh)"
 
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
