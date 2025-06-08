@@ -9,9 +9,11 @@ window-decoration = none
 background-opacity = 0.9
 background-blur = true
 
-font-family = JetBrainsMono NFM Light
+font-family = JetBrainsMono NFM Regular
 font-style-italic = false
 font-size = 16
+adjust-cell-width = -5%
+adjust-cell-height = 10%
 
 background = #131313
 
