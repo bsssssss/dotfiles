@@ -10,20 +10,20 @@ permission:
   acl: dark_cyan
   context: cyan
 date:
-  hour-old: dark_yellow
-  day-old: 244
+  hour-old: magenta
+  day-old: 245
   older: 240
 size:
-  none: 242
-  small: 244
+  none: 240
+  small: 245
   medium: 250
-  large: dark_yellow
+  large: red
 inode:
   valid: 13
   invalid: 245
 links:
   valid: 13
-  invalid: 245
+  invalid: red
 tree-edge: black
 git-status:
   default: 245
