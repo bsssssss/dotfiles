@@ -32,8 +32,6 @@ plugins=(
 )
 
 # AUTOCOMPLETION
-#
-# initialize autocompletion
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
 
@@ -47,10 +45,10 @@ setopt HIST_EXPIRE_DUPS_FIRST
 setopt hist_ignore_dups
 setopt hist_verify
 setopt EXTENDED_HISTORY
+setopt always_to_end # When completing a word, move the cursor to the end of the word
 
 COMPLETION_WAITING_DOTS="true"
 
-setopt always_to_end # When completing a word, move the cursor to the end of the word
 
 # PROMPT
 # autoload -U promptinit; promptinit
@@ -63,7 +61,6 @@ eval "$(starship init zsh)"
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 
 # VARIABLES
-#
 export VISUAL=nvim
 export EDITOR=nvim
 
@@ -76,7 +73,6 @@ export JUCE_DIR="$HOME/Dev/frameworks/JUCE/install"
 export JUCE_HOST="$HOME/git/JUCE/cmake-build/extras/AudioPluginHost/AudioPluginHost_artefacts/AudioPluginHost.app/Contents/MacOS/AudioPluginHost"
 
 # PYTHON
-#
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -94,7 +90,6 @@ alias vi=nvim
 alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
 alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
 alias dotfiles="cd ~/.dotfiles"
-# alias ls=lsd
 alias ll="lsd -la"
 alias notes="cd ~/Vaults/Personal/1\ -\ Notes/"
 alias vpdf='zathura "$@" & disown'
@@ -104,6 +99,7 @@ alias gg="lazygit"
 # autocompletion using arrow keys (based on history)
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
+bindkey '^@' forward-word
 
 # FZF
 source <(fzf --zsh)
@@ -135,19 +131,15 @@ fzf-history-widget-custom() {
 zle -N fzf-history-widget-custom
 bindkey '^R' fzf-history-widget-custom
 
-source ~/dev/git/fzf-git.sh/fzf-git.sh 
-
+# This ensure the bind 
 autoload -U add-zsh-hook
-
 force_fzf_binding() {
     bindkey '^R' fzf-history-widget-custom
 }
-
-# Hook qui s'exécute avant chaque prompt
 add-zsh-hook precmd force_fzf_binding
 
-# Hook qui s'exécute après chaque commande  
-# add-zsh-hook preexec force_fzf_binding
+source ~/dev/git/fzf-git.sh/fzf-git.sh 
+
 
 # ZOXIDE
 eval "$(zoxide init zsh)"
