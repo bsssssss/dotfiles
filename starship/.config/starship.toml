@@ -27,11 +27,12 @@ aliases = {"Max-Macbook-Pro" = "@home"}
 
 [directory]
 style = "blue"
-truncation_length = 0
+truncation_length = 3
 truncate_to_repo = false
+fish_style_pwd_dir_length = 1
 
 [character]
-success_symbol = "[❯](green)"
+success_symbol = "[❯](purple)"
 error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](purple)"
 
