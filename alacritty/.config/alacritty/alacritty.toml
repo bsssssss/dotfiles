@@ -9,8 +9,8 @@ blur = true
 decorations = "Buttonless"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font Mono", style = "ExtraLight" }
-italic = { style = "Light" }
+normal = { family = "JetBrainsMono Nerd Font Mono", style = "Light" }
+italic = { style = "Regular" }
 size = 16
 
 [cursor.style]
