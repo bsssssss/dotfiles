@@ -4,7 +4,7 @@ TERM = "alacritty"
 [window]
 padding = {x = 4, y = 8}
 dynamic_padding = true
-opacity = 0.85
+opacity = 0.75
 blur = true
 decorations = "Buttonless"
 
