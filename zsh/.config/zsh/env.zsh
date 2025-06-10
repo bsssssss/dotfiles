@@ -4,8 +4,9 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 export VISUAL=nvim
 export EDITOR=nvim
-export MANPAGER="nvim +Man!"
-# export MANPAGER="less -R --use-color -Dd+c-Du+b"
+# export MANPAGER="nvim +Man!"
+export MANPAGER="less -R --use-color -Dd+c-Du+4"
+# export MANPAGER="most"
 
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
@@ -25,6 +26,7 @@ path=(
   $HOME/.pyenv/shims/python3
   $HOME/dev/git/emsdk
   $HOME/dev/git/emsdk/upstream/emscripten
+  $HOME/scripts
   $path
 )
 
