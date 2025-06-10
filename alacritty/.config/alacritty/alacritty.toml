@@ -13,9 +13,13 @@ normal = { family = "JetBrainsMono Nerd Font Mono", style = "Light" }
 italic = { style = "Regular" }
 size = 16
 
-[cursor.style]
-shape = "Block"
-blinking = "On"
+[cursor]
+style = { shape = "Block", blinking = "On"}
+blink_timeout = 0
+blink_interval = 500
 
 [mouse]
 hide_when_typing = true
+
+[colors]
+selection = { text = "CellForeground", background = "#353535" }
