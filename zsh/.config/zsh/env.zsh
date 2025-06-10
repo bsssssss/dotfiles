@@ -5,6 +5,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export VISUAL=nvim
 export EDITOR=nvim
 export MANPAGER="nvim +Man!"
+# export MANPAGER="less -R --use-color -Dd+c-Du+b"
 
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
