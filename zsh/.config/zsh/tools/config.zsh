@@ -5,6 +5,7 @@ source "$ZSH_CONFIG_DIR/tools/python.zsh"
 source "$ZSH_CONFIG_DIR/tools/ghc.zsh"
 source "$ZSH_CONFIG_DIR/tools/fzf.zsh"
 source "$ZSH_CONFIG_DIR/tools/zoxide.zsh"
+source "$ZSH_CONFIG_DIR/tools/batman.zsh"
 
 # This must be last
 source "$ZSH_CONFIG_DIR/tools/sdkman.zsh"
