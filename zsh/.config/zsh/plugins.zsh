@@ -15,6 +15,6 @@ ZVM_VI_HIGHLIGHT_BACKGROUND=#754545
 
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-bindkey '^@' forward-word # Accept auto-suggestion by word with ctrl-space
+# source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# bindkey '^@' forward-word # Accept auto-suggestion by word with ctrl-space
 
