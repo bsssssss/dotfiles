@@ -6,7 +6,7 @@ gui:
 
     # Border color of non-focused windows
     inactiveBorderColor:
-      - "#555555"
+      - "#888888"
 
     # Border color of focused window when searching in that window
     searchingActiveBorderColor:
@@ -20,7 +20,7 @@ gui:
     # Background color of selected line.
     # See https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md#highlighting-the-selected-line
     selectedLineBgColor:
-      - "#333333"
+      - default
 
     # Background color of selected line when view doesn't have focus.
     inactiveViewSelectedLineBgColor:
