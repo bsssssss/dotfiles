@@ -6,7 +6,8 @@ source ~/dev/git/fzf-git.sh/fzf-git.sh
 export FZF_DEFAULT_OPTS='
     --height 33% 
     --layout default 
-    --color=bg+:#333333,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#666666'
+    --style=minimal
+    --color=bg+:-1,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#999999'
 
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
