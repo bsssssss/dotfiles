@@ -4,7 +4,7 @@ source <(fzf --zsh)
 source ~/dev/git/fzf-git.sh/fzf-git.sh 
 
 export FZF_DEFAULT_OPTS='
-    --height 33% 
+    --height 20% 
     --layout default 
     --style=minimal
     --color=bg+:-1,gutter:-1,pointer:-1,info:#c4a7e7,spinner:#c4a7e7,fg:#999999'
