@@ -29,3 +29,4 @@ hide_when_typing = true
 [colors]
 primary = {background = "#181818"}
 selection = { text = "CellForeground", background = "#353535" }
+cursor = { text = "CellBackground", cursor = "CellForeground" }
