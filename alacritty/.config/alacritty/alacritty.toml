@@ -1,6 +1,6 @@
 [general]
 import = [
-    "themes/themes/base16_default_dark.toml",
+    "./themes/themes/kanagawa_dragon.toml",
 ]
 
 [env]
