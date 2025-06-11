@@ -1,6 +1,6 @@
 [general]
 import = [
-    "themes/themes/kanagawa_dragon.toml",
+    "themes/themes/base16_default_dark.toml",
 ]
 
 [env]
@@ -27,4 +27,5 @@ blink_interval = 500
 hide_when_typing = true
 
 [colors]
+primary = {background = "#181818"}
 selection = { text = "CellForeground", background = "#353535" }
