@@ -1,6 +1,7 @@
 # Dotfiles
 
-This is a global repository for most of my config files 
+This is a global repository for most of my config files. It is designed to be
+used with the ```stow``` command.
 
 ### Neovim
 Note that the neovim config in ```nvim/.config/nvim``` is a submodule. 
