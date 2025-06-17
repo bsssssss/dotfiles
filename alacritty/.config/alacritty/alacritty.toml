@@ -9,7 +9,7 @@ TERM = "alacritty"
 [window]
 padding = {x = 4, y = 8}
 dynamic_padding = true
-opacity = 0.8
+opacity = 1
 blur = true
 decorations = "Buttonless"
 
@@ -27,6 +27,6 @@ blink_interval = 500
 hide_when_typing = true
 
 [colors]
-primary = {background = "#181818"}
+primary = {background = "#222222"}
 selection = { text = "CellForeground", background = "#353535" }
 cursor = { text = "CellBackground", cursor = "CellForeground" }
