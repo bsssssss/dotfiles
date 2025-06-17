@@ -11,7 +11,7 @@ export MANPAGER="less -R --use-color -Dd+c-Du+4"
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 
-export TIDAL_PATH="$HOME/dev/github.com/bsssssss/tidal/src/Sound/Tidal"
+export TIDAL_PATH="$HOME/dev/github.com/bsssssss/tidal/tidal-core/src/Sound/Tidal"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
