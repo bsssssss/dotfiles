@@ -7,7 +7,7 @@ import = [
 TERM = "alacritty"
 
 [window]
-padding = {x = 4, y = 8}
+padding = {x = 0, y = 0}
 dynamic_padding = true
 opacity = 1
 blur = true
