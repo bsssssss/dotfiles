@@ -39,12 +39,12 @@ style = "bright-black"
 [git_status]
 style = "purple"
 format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](yellow)($ahead_behind$stashed)]($style)"
-conflicted = "​"
-untracked = "​"
-modified = "​"
-staged = "​"
-renamed = "​"
-deleted = "​"
+conflicted = " "
+untracked = " "
+modified = " "
+staged = " "
+renamed = " "
+deleted = " "
 stashed = "≡"
 
 [git_state]
