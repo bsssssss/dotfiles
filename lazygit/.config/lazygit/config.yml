@@ -48,4 +48,4 @@ gui:
 
     # Default text color
     defaultFgColor:
-      - "#EEEEEE"
+      - "#dddddd"
