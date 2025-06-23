@@ -6,7 +6,7 @@ cursor-text = #000000
 macos-titlebar-proxy-icon = hidden
 
 window-decoration = none
-background-opacity = 0.9
+background-opacity = 1
 background-blur = true
 
 font-family = JetBrainsMono NFM Regular
@@ -15,7 +15,7 @@ font-size = 16
 adjust-cell-width = -5%
 adjust-cell-height = 10%
 
-background = #131313
+background = #222222
 
 cursor-style-blink = true
 cursor-invert-fg-bg = false
