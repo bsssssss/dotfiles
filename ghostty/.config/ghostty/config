@@ -16,6 +16,7 @@ adjust-cell-width = -5%
 adjust-cell-height = 10%
 
 background = #222222
+theme = "Later This Evening"
 
 cursor-style-blink = true
 cursor-invert-fg-bg = false
