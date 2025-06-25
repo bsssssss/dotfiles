@@ -15,8 +15,8 @@ font-size = 16
 adjust-cell-width = -5%
 adjust-cell-height = 10%
 
+# theme = "Later This Evening"
 background = #222222
-theme = "Later This Evening"
 
 cursor-style-blink = true
 cursor-invert-fg-bg = false
