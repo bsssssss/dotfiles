@@ -15,7 +15,7 @@ decorations = "Buttonless"
 
 [font]
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "Light" }
-italic = { style = "Regular" }
+# italic = { style = "RegularItalic" }
 size = 16
 
 [cursor]
