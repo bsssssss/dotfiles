@@ -27,6 +27,6 @@ blink_interval = 500
 hide_when_typing = true
 
 [colors]
-primary = { background = "#222222" }
+primary = { background = "#222222", foreground = "#c6b7a0" }
 selection = { text = "CellForeground", background = "#353535" }
 cursor = { text = "CellBackground", cursor = "CellForeground" }
