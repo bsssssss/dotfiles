@@ -7,10 +7,12 @@ cursor-style-blink = true
 cursor-invert-fg-bg = false
 
 macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = false
 
 window-decoration = auto
 background-opacity = 1
 background-blur = true
+
 
 font-family = JetBrainsMono NFM Regular
 font-style-italic = false
@@ -19,4 +21,4 @@ font-size = 16
 # adjust-cell-width = -5%
 # adjust-cell-height = 10%
 
-theme = dark:my-kanagawa-dark,light:my-kanagawa-light
+theme = dark:my-kanagawa-dark,light:"Monokai Pro Light"
