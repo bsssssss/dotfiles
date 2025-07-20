@@ -11,7 +11,7 @@ export MANPAGER="less -R --use-color -Dd+c-Du+4"
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
 
-export TIDAL_PATH="$HOME/dev/github.com/bsssssss/tidal"
+export TIDAL_SRC_PATH="$HOME/dev/codeberg.org/vlachaizle/tidal"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
