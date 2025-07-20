@@ -10,5 +10,7 @@ alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
 alias ll="lsd -la"
 alias tree='tree -C'
 
-alias notes="cd ~/Vaults/Personal/1\ -\ Notes/"
+alias notes="cd ~/Vaults/Personal/notes"
 alias vpdf='zathura "$@" & disown'
+
+alias sclang="/Applications/SuperCollider.app/Contents/MacOS/sclang"
