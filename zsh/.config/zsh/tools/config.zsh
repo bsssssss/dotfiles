@@ -6,6 +6,7 @@ source "$ZSH_CONFIG_DIR/tools/ghc.zsh"
 source "$ZSH_CONFIG_DIR/tools/fzf.zsh"
 source "$ZSH_CONFIG_DIR/tools/zoxide.zsh"
 source "$ZSH_CONFIG_DIR/tools/batman.zsh"
+source "$ZSH_CONFIG_DIR/tools/sapf.zsh"
 
 # This must be last
 source "$ZSH_CONFIG_DIR/tools/sdkman.zsh"
