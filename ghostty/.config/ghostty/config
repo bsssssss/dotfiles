@@ -1,6 +1,6 @@
 mouse-hide-while-typing = true
 
-cursor-text = #000000
+# cursor-text = #000000
 
 cursor-style-blink = true
 cursor-invert-fg-bg = false
