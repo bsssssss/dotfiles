@@ -13,4 +13,4 @@ alias tree='tree -C'
 alias notes="cd ~/Vaults/Personal/notes"
 alias vpdf='zathura "$@" & disown'
 
-alias sclang="/Applications/SuperCollider.app/Contents/MacOS/sclang"
+# alias sclang='/Applications/SuperCollider.app/Contents/MacOS/sclang "$@"'
