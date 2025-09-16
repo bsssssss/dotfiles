@@ -2,7 +2,7 @@ format = """
 $username$hostname \
 $directory\
 ($git_branch$git_state$git_status) \
-$python \
+$python\
 $line_break\
 $character
 """
@@ -33,7 +33,7 @@ error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](purple)"
 
 [git_branch]
-format = "[$branch]($style)"
+format = "([$branch]($style))"
 style = "bright-black"
 
 [git_status]
