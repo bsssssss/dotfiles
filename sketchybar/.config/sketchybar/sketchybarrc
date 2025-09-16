@@ -24,6 +24,7 @@ default=(
   background.padding_right=5
   padding_left=5
   padding_right=5
+  y_offset=1
   # icon.font="JetBrainsMono Nerd Font:Light:16.0"
   # label.font="JetBrainsMono Nerd Font:Light:15.0"
   icon.font="CommitMono:Regular:15.0"
