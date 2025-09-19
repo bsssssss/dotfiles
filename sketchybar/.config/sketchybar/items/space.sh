@@ -8,8 +8,8 @@ for i in "${!SPACE_ICONS[@]}"; do
     space=(
         space="$sid"
         icon="${SPACE_ICONS[i]}"
-        icon.padding_left=8
-        icon.padding_right=8
+        icon.padding_left=16
+        icon.padding_right=16
         label.drawing=off
         script="$PLUGIN_DIR/space.sh"
         click_script="yabai -m space --focus $sid"
