@@ -1,10 +1,15 @@
 #!/usr/bin/env bash
 
-# make sure it's executable with:
-# chmod +x ~/.config/sketchybar/plugins/aerospace.sh
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+source "$PLUGIN_DIR/colors.sh"
 
 if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
-    sketchybar --set $NAME label.color=0xFFFFFFFF
+    sketchybar --set $NAME \
+        label.color="$FG_COLOR_ACCENT" \
+        label.font.style="Bold"
 else
-    sketchybar --set $NAME label.color=0x88888888
+    sketchybar --set $NAME \
+        label.color="$FG_COLOR_DIMMED" \
+        label.font.style="Regular"
+
 fi
