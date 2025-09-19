@@ -4,7 +4,7 @@ source <(fzf --zsh)
 source ~/dev/clones/fzf-git.sh/fzf-git.sh 
 
 export FZF_DEFAULT_OPTS='
-    --height 20% 
+    --height=~10% 
     --layout default 
     --style=minimal
     --color=bg+:-1,gutter:-1,pointer:-1,info:green,spinner:green,fg:244,fg+:7'
@@ -23,7 +23,7 @@ _fzf_compgen_dir() {
 fzf-history-widget-custom() {
     local selected
     if selected=$(fc -rl 1 | awk '{ cmd=$0; sub(/^[ \t]*[0-9]+\**[ \t]+/, "", cmd); if (!seen[cmd]++) print $0 }' |
-        FZF_DEFAULT_OPTS="--height ${FZF_TMUX_HEIGHT:-40%} --reverse --bind=ctrl-r:toggle-sort $FZF_DEFAULT_OPTS" fzf); then
+        FZF_DEFAULT_OPTS=" $FZF_DEFAULT_OPTS --scheme=history --bind=ctrl-r:toggle-sort" fzf); then
         BUFFER=$(echo "$selected" | sed 's/^[0-9 ]*\*\{0,1\}[[:space:]]*//')
         CURSOR=$#BUFFER
     fi
