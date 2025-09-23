@@ -15,8 +15,6 @@ function zvm_config() {
 }
 
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # bindkey '^@' forward-word # Accept auto-suggestion by word with ctrl-space
