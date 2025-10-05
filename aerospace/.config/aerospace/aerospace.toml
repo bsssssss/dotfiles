@@ -11,12 +11,11 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
     'exec-and-forget sketchybar --reload',
-    'exec-and-forget borders',
-    'aerospace workspace 1'
+    # 'exec-and-forget borders',
 ]
 
 # Start AeroSpace at login
-start-at-login = false
+start-at-login = true
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
@@ -68,15 +67,16 @@ preset = 'qwerty'
 [gaps]
 inner.horizontal = 10
 inner.vertical   = 10
-outer.left       = 10
-outer.bottom     = 10
 outer.top        = 10
+outer.bottom     = 10
+outer.left       = 10
 outer.right      = 10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
 # Fallback value (if you omit the key): mode.main.binding = {}
+
 [mode.main.binding]
 
 # All possible keys:
