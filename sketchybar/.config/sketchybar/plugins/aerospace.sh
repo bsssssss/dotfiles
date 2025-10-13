@@ -5,11 +5,14 @@ source "$PLUGIN_DIR/colors.sh"
 
 if [ "$1" = "$FOCUSED_WORKSPACE" ]; then
     sketchybar --set $NAME \
+        icon="●" \
+        icon.color="$FG_COLOR" \
         label.color="$FG_COLOR" \
-        label.font.style="Bold"
+        # label.font.style="Bold"
 else
     sketchybar --set $NAME \
+        icon="○" \
+        icon.color="$FG_COLOR" \
         label.color="$FG_COLOR_DIMMED" \
-        label.font.style="Regular"
-
+        # label.font.style="Regular"
 fi

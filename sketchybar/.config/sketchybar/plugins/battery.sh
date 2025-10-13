@@ -84,5 +84,6 @@ esac
 # updated with the current battery status
 sketchybar --set "$NAME"\
     icon="$ICON"\
+    icon.font.size=16 \
     label="${PERCENTAGE}%"\
     label.padding_left=5
