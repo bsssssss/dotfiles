@@ -23,12 +23,12 @@ automatically-unhide-macos-hidden-apps = true
 preset = 'qwerty'
 
 [gaps]
-inner.horizontal = 10
-inner.vertical   = 10
-outer.top        = 10
-outer.bottom     = 10
-outer.left       = 10
-outer.right      = 10
+inner.horizontal = 5
+inner.vertical   = 5
+outer.top        = 1
+outer.bottom     = 0
+outer.left       = 0
+outer.right      = 0
 
 [mode.main.binding]
 alt-slash = 'layout tiles horizontal vertical'
