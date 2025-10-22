@@ -26,7 +26,7 @@ preset = 'qwerty'
 inner.horizontal = 5
 inner.vertical   = 5
 outer.top        = 1
-outer.bottom     = 0
+outer.bottom     = -1
 outer.left       = 0
 outer.right      = 0
 
