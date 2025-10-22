@@ -3,8 +3,8 @@
 setopt APPEND_HISTORY
 setopt SHARE_HISTORY
 HISTFILE="$ZSH_CONFIG_DIR/history/zsh_history"
-SAVEHIST=1000
-HISTSIZE=999
+HISTSIZE=10000
+SAVEHIST=10000
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt hist_ignore_dups
 setopt hist_verify
