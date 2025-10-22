@@ -27,4 +27,4 @@ adjust-cell-height = 2%
 theme = dark:my-kanagawa-dark,light:"Monokai Pro Light"
 
 quick-terminal-size = 50%
-keybind = ctrl+,=toggle_quick_terminal
+keybind = global:ctrl+,=toggle_quick_terminal
