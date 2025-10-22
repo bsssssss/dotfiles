@@ -85,5 +85,6 @@ esac
 sketchybar --set "$NAME"\
     icon="$ICON"\
     icon.font.size=16 \
+    icon.padding_right=5 \
     label="${PERCENTAGE}%"\
-    label.padding_left=5
+    label.padding_right=10
