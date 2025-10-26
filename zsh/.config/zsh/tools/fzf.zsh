@@ -3,11 +3,14 @@
 source <(fzf --zsh)
 source ~/dev/clones/fzf-git.sh/fzf-git.sh 
 
-export FZF_DEFAULT_OPTS='
-    --height=~10% 
-    --layout default 
+export FZF_DEFAULT_OPTS="
+    --height=~10%
+    --layout reverse
     --style=minimal
-    --color=bg+:-1,gutter:-1,pointer:-1,info:green,spinner:green,fg:244,fg+:7'
+    --color=bg+:-1,gutter:0,pointer:-1,info:magenta,spinner:green,fg:244,fg+:7
+    --gutter ' '
+    --pointer ' '
+    --no-info"
 
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
