@@ -7,4 +7,6 @@ source "$ZSH_CONFIG_DIR/plugins.zsh"
 source "$ZSH_CONFIG_DIR/completion.zsh"
 source "$ZSH_CONFIG_DIR/history/config.zsh"
 source "$ZSH_CONFIG_DIR/prompt.zsh"
-source "$ZSH_CONFIG_DIR/tools/config.zsh" 
+source "$ZSH_CONFIG_DIR/tools/config.zsh"
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh

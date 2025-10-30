@@ -1,7 +1,0 @@
-export SAPF_HISTORY="$HOME/sapf/sapf-history.txt"
-export SAPF_LOG="$HOME/sapf/sapf-log.txt"
-export SAPF_PRELUDE="$HOME/sapf/sapf-prelude.txt"
-export SAPF_EXAMPLES="$HOME/sapf/sapf-examples.txt"
-export SAPF_README="$HOME/sapf/README.txt"
-export SAPF_RECORDINGS="$HOME/sapf/recordings"
-export SAPF_SPECTROGRAMS="$HOME/sapf/spectrograms"
