@@ -1,7 +1,6 @@
 #!/usr/bin/env zsh
 
 source <(fzf --zsh)
-source ~/dev/clones/fzf-git.sh/fzf-git.sh 
 
 export FZF_DEFAULT_OPTS="
     --height=~10%
