@@ -15,15 +15,15 @@ date:
   older: 240
 size:
   none: 240
-  small: 245
-  medium: 250
+  small: 240
+  medium: 245
   large: red
 inode:
   valid: 13
   invalid: 245
 links:
-  valid: 13
-  invalid: red
+  valid: dark_green
+  invalid: dark_red
 tree-edge: black
 git-status:
   default: 245

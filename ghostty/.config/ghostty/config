@@ -1,4 +1,5 @@
 mouse-hide-while-typing = true
+resize-overlay = never
 
 cursor-style = underline
 cursor-style-blink = true
