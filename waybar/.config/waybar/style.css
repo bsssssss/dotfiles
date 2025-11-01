@@ -1,0 +1,85 @@
+/* --- Global Styles --- */
+
+* {
+  font-family: 'SF Pro Text';
+  min-height: 0;
+  padding: 0;
+  color: #caa88b;
+}
+
+#waybar {
+  background: transparent;
+}
+
+#workspaces,
+#clock,
+#bluetooth,
+#network {
+  padding: 2 0;
+  margin-top: 0;
+}
+
+#workspaces,
+#bluetooth,
+#network {
+  font-family: 'CommitMono Nerd Font Propo';
+}
+
+
+/* --- LEFT --- */
+
+#workspaces {
+  font-size: 14px;
+  min-width: 0;
+}
+
+#workspaces button {
+  margin-right: 10px;
+}
+
+
+/* --- CENTER --- */
+
+#clock {
+  padding: 0 0.7rem;
+  font-family: "Pokemon Classic";
+  font-size: 13;
+}
+
+
+/* --- RIGHT --- */
+
+#bluetooth,
+#network {
+  padding: 0 8px;
+  font-size: 18px;
+}
+
+#network.disconnected {
+  color: gray;
+}
+
+#bluetooth {
+  padding-right: 2;
+  color: gray;
+}
+
+#bluetooth.on {
+  color: #caa88b;
+}
+
+#bluetooth.connected {
+  color: #caa88b;
+}
+
+/* --- Tooltip Styles --- */
+tooltip {
+  background-color: #1a1b26;
+  color: #dddddd;
+  padding: 5px 12px;
+  margin: 5px 0px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+}

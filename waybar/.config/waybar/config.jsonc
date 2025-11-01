@@ -1,0 +1,57 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 10,
+  "margin-left": 20,
+  "margin-right": 20,
+  "margin-bottom": 0,
+  "spacing" : 0,
+  "modules-left": [
+      "hyprland/workspaces",
+  ],
+
+  "modules-center": [
+      "clock#date",
+      "clock#time"
+  ],
+
+  "modules-right": [
+    "network",
+    "bluetooth",
+  ],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "default": ""
+    }
+  },
+
+  "clock#date": {
+    "locale": "fr_FR.utf8",
+    "tooltip": false,
+    "format": "{:L%A %d %B}",
+    "interval": 60
+  },
+
+  "clock#time": {
+    "locale": "fr_FR.utf8",
+    "tooltip": false,
+    "format": "{:L%H:%M}",
+    "interval": 60
+  },
+
+  "network": {
+    "format-wifi": "󰤢",
+    "format-ethernet": "󰈀 ",
+    "format-disconnected": "󰤠 ",
+    "interval": 5,
+    "tooltip-format": "{essid} ({signalStrength}%)",
+    "on-click": "nm-connection-editor"
+  },
+
+  "bluetooth": {
+    "format": "",
+  }
+}
