@@ -12,7 +12,7 @@ background-opacity = 1
 background-blur = false
 
 font-family = "CommitMonoSpaced"
-font-size = 14
+font-size = 13
 
 theme = my-kanagawa-dark
 
