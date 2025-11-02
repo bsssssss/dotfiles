@@ -40,7 +40,7 @@ disabled = false
 
 [git_status]
 style = "purple"
-# format = '[$all_status$ahead_behind]($style)'
+format = '[\[$all_status$ahead_behind\]]($style)'
 stashed = "≡"
 
 [git_state]
