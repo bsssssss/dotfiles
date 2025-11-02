@@ -11,3 +11,6 @@ source "$ZSH_CONFIG_DIR/prompt.zsh"
 source "$ZSH_CONFIG_DIR/tools/config.zsh"
 source "$ZSH_CONFIG_DIR/vi_mode.zsh"
 source "$ZSH_CONFIG_DIR/colors.zsh" 
+
+# opencode
+export PATH=/home/bss/.opencode/bin:$PATH
