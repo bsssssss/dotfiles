@@ -1,18 +1,18 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-top": 10,
-  "margin-left": 20,
-  "margin-right": 20,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
   "margin-bottom": 0,
   "spacing" : 0,
+
   "modules-left": [
       "hyprland/workspaces",
   ],
 
   "modules-center": [
-      "clock#date",
-      "clock#time"
+      "clock"
   ],
 
   "modules-right": [
@@ -25,20 +25,16 @@
     "format-icons": {
       "active": "",
       "default": ""
-    }
+    },
+    "persistent-workspaces": true,
+    "active-only": false
   },
 
-  "clock#date": {
+  "clock": {
     "locale": "fr_FR.utf8",
-    "tooltip": false,
-    "format": "{:L%A %d %B}",
-    "interval": 60
-  },
-
-  "clock#time": {
-    "locale": "fr_FR.utf8",
-    "tooltip": false,
-    "format": "{:L%H:%M}",
+    "tooltip": true,
+    "format": "{:L%H : %M}",
+    "tooltip-format": "{:L%A %d %B}",
     "interval": 60
   },
 
@@ -52,6 +48,11 @@
   },
 
   "bluetooth": {
-    "format": "",
+    "format": "󰂯",
+    "format-connected": "󰂱",
+    "format-off": "󰂲",
+    "tooltip": true,
+    "tooltip-format-connected": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}"
   }
 }
