@@ -40,8 +40,9 @@ disabled = false
 
 [git_status]
 style = "purple"
-format = '[\[$all_status$ahead_behind\]]($style)'
+# format = '[\[$all_status$ahead_behind\]]($style)'
 stashed = "≡"
+use_git_executable = true
 
 [git_state]
 format = '[\($state $progress_current\$progress_total\)]($style)'
