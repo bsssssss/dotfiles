@@ -4,7 +4,8 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 path=(
     "$HOME/.local/bin"
-    "$HOME/.local/share/bss-arch/bin"
+    # we set this in ~/.local/share/bss-arch/install.sh !
+    # "$HOME/.local/share/bss-arch/bin"
     $path
 )
 
