@@ -1,0 +1,31 @@
+[general]
+import = [
+    "./themes/kanagawa_dragon.toml",
+]
+
+[env]
+TERM = "alacritty"
+
+[window]
+padding = {x = 5, y = 5}
+dynamic_padding = true
+opacity = 1
+blur = true
+decorations = "Buttonless"
+
+[font]
+normal = { family = "CommitMono Nerd Font" }
+# italic = { style = "RegularItalic" }
+size = 14
+
+[cursor]
+style = { shape = "Underline", blinking = "Off"}
+blink_timeout = 0
+blink_interval = 500
+
+[mouse]
+hide_when_typing = true
+
+[colors]
+selection = { text = "CellForeground", background = "#353535" }
+cursor = { text = "CellBackground", cursor = "CellForeground" }
