@@ -1,6 +1,30 @@
 #!/usr/bin/env zsh
 
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-export PYTHON=$(which python)
+export PYENV_ROOT="$HOME/.pyenv"
+
+pyenv() {
+  unset -f pyenv python pip
+  eval "$(command pyenv init --path)"
+  eval "$(command pyenv init -)"
+  eval "$(command pyenv virtualenv-init -)"
+  export PYTHON=$(which python)
+  pyenv "$@"
+}
+
+python() {
+  unset -f pyenv python pip
+  eval "$(command pyenv init --path)"
+  eval "$(command pyenv init -)"
+  eval "$(command pyenv virtualenv-init -)"
+  export PYTHON=$(which python)
+  python "$@"
+}
+
+pip() {
+  unset -f pyenv python pip
+  eval "$(command pyenv init --path)"
+  eval "$(command pyenv init -)"
+  eval "$(command pyenv virtualenv-init -)"
+  export PYTHON=$(which python)
+  pip "$@"
+}
