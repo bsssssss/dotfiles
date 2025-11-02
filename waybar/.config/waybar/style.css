@@ -42,8 +42,10 @@
 
 #clock {
   padding: 0 0.7rem;
-  font-family: "Pokemon Classic";
+  /* font-family: "Pokemon Classic"; */
+  font-family: "Mac's Minecraft";
   font-size: 13;
+  font-weight: 400;
 }
 
 
