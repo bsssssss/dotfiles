@@ -26,8 +26,12 @@
       "active": "",
       "default": ""
     },
-    "persistent-workspaces": true,
-    "active-only": false
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+    }
   },
 
   "clock": {
