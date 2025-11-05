@@ -4,7 +4,6 @@
   font-family: "Mac's Minecraft";
   min-height: 0;
   padding: 0;
-  color: rgb(202, 168, 139);
 }
 
 #waybar {
@@ -17,6 +16,7 @@
 #network {
   padding: 0 0;
   margin-top: 8;
+  color: rgb(202, 168, 139);
 }
 
 #workspaces,
@@ -36,6 +36,11 @@
 
 #workspaces button {
   margin-right: 8px;
+  color: rgb(202, 168, 139);
+}
+
+#workspaces button.empty {
+  color: gray;
 }
 
 
