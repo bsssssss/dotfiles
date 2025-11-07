@@ -16,4 +16,4 @@ font-size = 13
 
 theme = my-kanagawa-dark
 
-keybind = ctrl+shift+i=ignore
+# keybind = ctrl+shift+i=ignore
