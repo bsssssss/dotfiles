@@ -1,8 +1,6 @@
 /* --- Global Styles --- */
 
 * {
-  /* font-family: "Mac's Minecraft"; */
-  font-family: "Terminus";
   min-height: 0;
   padding: 0;
 }
@@ -41,7 +39,7 @@
 }
 
 #workspaces button.empty {
-  color: gray;
+  color: rgba(202, 168, 139, 0.3);
 }
 
 
@@ -49,8 +47,7 @@
 
 #clock {
   padding: 0 0.7rem;
-  /* font-family: "Pokemon Classic"; */
-  /* font-family: "Mac's Minecraft"; */
+  font-family: "Terminus";
   font-size: 20;
   font-weight: 600;
 }
@@ -71,7 +68,7 @@
 #bluetooth {
   font-size: 20px;
   margin-right: 22;
-  color: gray;
+  color: rgba(202, 168, 139, 0.3);
 }
 
 #bluetooth.on {
@@ -82,15 +79,18 @@
   color: #caa88b;
 }
 
+
 /* --- Tooltip Styles --- */
+
 tooltip {
   background-color: #111111;
   margin: 5px 0px;
   border-radius: 0px;
-  border: 2px solid rgba(202, 168, 139, 0.5);
+  border: 1px solid rgba(202, 168, 139, 0.5);
 }
 
 tooltip label {
+  font-family: "Terminus";
   color: #caa88b;
   padding: 5px;
   font-size: 20;
