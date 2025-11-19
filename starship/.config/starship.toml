@@ -19,7 +19,7 @@ show_always = true
 style = 'purple'
 format = '[$ssh_symbol$hostname]($style)'
 ssh_only = true
-aliases = {"Max-Macbook-Pro" = "home"}
+aliases = {"Max-Macbook-Pro" = "macbook"}
 
 [directory]
 style = "blue"
@@ -35,6 +35,7 @@ vimcmd_symbol = "[❮](purple)"
 [git_branch]
 format = "([$branch ]($style))"
 style = "bright-black"
+
 [git_metrics]
 disabled = false
 
