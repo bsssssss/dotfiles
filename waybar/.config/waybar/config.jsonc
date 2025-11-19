@@ -37,7 +37,7 @@
   "clock": {
     "locale": "fr_FR.utf8",
     "tooltip": true,
-    "format": "{:L%H : %M}",
+    "format": "{:L%H:%M}",
     "tooltip-format": "{:L%A %d %B}",
     "interval": 60
   },
@@ -57,6 +57,7 @@
     "format-off": "󰂲",
     "tooltip": true,
     "tooltip-format-connected": "{device_enumerate}",
-    "tooltip-format-enumerate-connected": "{device_alias}"
+    "tooltip-format-enumerate-connected": "{device_alias}",
+    "on-click": "blueman-manager"
   }
 }
