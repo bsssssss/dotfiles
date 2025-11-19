@@ -33,13 +33,17 @@
   min-width: 0;
 }
 
-#workspaces button {
-  margin-right: 8px;
-  color: rgb(202, 168, 139);
-}
-
 #workspaces button.empty {
   color: rgba(202, 168, 139, 0.3);
+}
+
+#workspaces button.active {
+  color: rgba(202, 168, 139, 1);
+}
+
+#workspaces button {
+  margin-right: 8px;
+  color: rgba(202, 168, 139, 0.66);
 }
 
 
