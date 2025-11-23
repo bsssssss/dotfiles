@@ -7,9 +7,10 @@ export FZF_DEFAULT_OPTS="
     --height=~10%
     --layout reverse
     --style=minimal
-    --color=bg+:-1,gutter:0,pointer:-1,info:magenta,spinner:green,fg:244,fg+:7
+    --color=bg+:-1,info:magenta,spinner:green,fg:8,fg+:blue
     --gutter ' '
     --pointer ' '
+    --prompt ' '
     --no-info"
 
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"
