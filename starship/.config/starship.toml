@@ -1,7 +1,7 @@
 format = """
 $username$hostname \
 $directory\
-$git_branch$git_commit$git_status$git_metrics$git_state \
+$git_branch$git_status$git_commit$git_metrics$git_state \
 $python\
 $line_break\
 $character
@@ -34,7 +34,7 @@ vimcmd_symbol = "[❮](purple)"
 
 [git_branch]
 format = "([$branch ]($style))"
-style = "bright-black"
+style = "fg:8"
 
 [git_metrics]
 disabled = false
