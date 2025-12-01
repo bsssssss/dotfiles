@@ -4,7 +4,7 @@ bindkey -v
 export KEYTIMEOUT=5
 
 _fix_cursor() {
-    echo -ne '\e[4 q' # blinking underline
+    echo -ne '\e[4 q' # fixed underline
 }
 
 # Change cursor shape for different vi modes.

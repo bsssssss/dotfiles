@@ -1,16 +1,18 @@
 export ZSH_CONFIG_DIR="$HOME/.config/zsh"
 
 source "$ZSH_CONFIG_DIR/env.zsh"
-source "$ZSH_CONFIG_DIR/ssh.zsh"
 source "$ZSH_CONFIG_DIR/alias.zsh"
+
+source "$ZSH_CONFIG_DIR/ssh.zsh"
 
 source "$ZSH_CONFIG_DIR/completion.zsh"
 source "$ZSH_CONFIG_DIR/history/config.zsh"
+
+source "$ZSH_CONFIG_DIR/vi_mode.zsh"
 source "$ZSH_CONFIG_DIR/prompt.zsh"
+source "$ZSH_CONFIG_DIR/colors.zsh" 
 
 source "$ZSH_CONFIG_DIR/tools/config.zsh"
-source "$ZSH_CONFIG_DIR/vi_mode.zsh"
-source "$ZSH_CONFIG_DIR/colors.zsh" 
 
 # opencode
 export PATH=/home/bss/.opencode/bin:$PATH
