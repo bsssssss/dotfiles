@@ -4,3 +4,6 @@
 [submodule "tmux/.config/tmux/plugins/tpm"]
 	path = tmux/.config/tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "zsh/.config/zsh/private"]
+	path = zsh/.config/zsh/private
+	url = git@github.com:bsssssss/zsh-private.git

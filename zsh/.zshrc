@@ -1,6 +1,7 @@
 export ZSH_CONFIG_DIR="$HOME/.config/zsh"
 
 source "$ZSH_CONFIG_DIR/env.zsh"
+source "$ZSH_CONFIG_DIR/private/env.zsh"
 source "$ZSH_CONFIG_DIR/alias.zsh"
 
 source "$ZSH_CONFIG_DIR/ssh.zsh"
