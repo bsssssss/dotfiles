@@ -14,5 +14,5 @@ export PATH
 
 export VISUAL=nvim
 export EDITOR=nvim
-export MANPAGER="less -R --use-color -DS232.2 -DP232.7"
+export MANPAGER="nvim +Man!"
 export TERMINAL="ghostty"
