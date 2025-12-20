@@ -16,7 +16,7 @@ decorations = "Buttonless"
 [font]
 normal = { family = "JetBrainsMono Nerd Font Mono", style = "Light" }
 # italic = { style = "RegularItalic" }
-size = 16
+size = 20
 
 [cursor]
 style = { shape = "Block", blinking = "On"}
@@ -27,6 +27,6 @@ blink_interval = 500
 hide_when_typing = true
 
 [colors]
-primary = { background = "#222222", foreground = "#c6b7a0" }
+primary = { background = "#1d1d24", foreground = "#c6b7a0" }
 selection = { text = "CellForeground", background = "#353535" }
 cursor = { text = "CellBackground", cursor = "CellForeground" }

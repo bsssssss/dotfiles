@@ -7,7 +7,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias viconf="cd ~/.dotfiles/nvim/.config/nvim/"
 alias kittyconf="cd ~/.dotfiles/kitty/.config/kitty"
 
-alias ll="lsd -la"
+alias ll="eza -la --group-directories-first"
 alias tree='tree -C'
 
 alias notes="cd ~/Vaults/Personal/notes"

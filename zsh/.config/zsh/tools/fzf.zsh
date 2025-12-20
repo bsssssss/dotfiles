@@ -10,7 +10,7 @@ export FZF_DEFAULT_OPTS="
     --color=bg+:-1,info:magenta,spinner:magenta,fg:8,fg+:blue,border:0
     --gutter ' '
     --pointer ' '
-    --prompt '  '
+    --prompt ' '
     --no-info"
 
 export FZF_DEFAULT_COMMAND="fd --hidden --exclude .git"

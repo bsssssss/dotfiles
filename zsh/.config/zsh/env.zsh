@@ -16,6 +16,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
 
+export MallocNanoZone='0' # suppress warning when compiling via clang with address sanitizer
+
 path=(
   $HOME/.cargo/bin
   $HOME/.pyenv/bin

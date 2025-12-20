@@ -20,7 +20,7 @@ background-blur = false
 # font-family = JetBrainsMono NFM Regular
 font-family = CommitMono
 font-style-italic = true
-font-size = 16
+font-size = 18
 
 # adjust-cell-width = -5%
 adjust-cell-height = 2%
