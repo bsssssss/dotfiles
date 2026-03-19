@@ -4,7 +4,7 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 export VISUAL=nvim
 export EDITOR=nvim
-export MANPAGER="less -R --use-color -Dd+c-Du+4"
+export MANPAGER="nvim +Man!"
 
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
@@ -15,6 +15,8 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
+
+export ASAN_OPTIONS=detect_leaks=0
 
 export MallocNanoZone='0' # suppress warning when compiling via clang with address sanitizer
 

@@ -17,15 +17,13 @@ window-padding-y = 10
 background-opacity = 1
 background-blur = false
 
-# font-family = JetBrainsMono NFM Regular
-font-family = CommitMono
+font-family = CommitMono Nerd Font
 font-style-italic = true
-font-size = 18
+font-size = 20
 
-# adjust-cell-width = -5%
-adjust-cell-height = 2%
+adjust-cell-height = 23%
 
-theme = dark:my-kanagawa-dark,light:"Monokai Pro Light"
+theme = dark:my-kanagawa-dark,light:"my-kanagawa-light"
 
 quick-terminal-size = 50%
 keybind = global:ctrl+,=toggle_quick_terminal
