@@ -1,14 +1,14 @@
 #!/usr/bin/env zsh
 
-function zvm_config() {
-    ZVM_INIT_MODE=sourcing # Fix fzf-vi-mode overwrites 
-    ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
-    ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
-    ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
-    ZVM_VI_HIGHLIGHT_BACKGROUND=black
-}
+# function zvm_config() {
+#     ZVM_INIT_MODE=sourcing # Fix fzf-vi-mode overwrites 
+#     # ZVM_INSERT_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+#     # ZVM_NORMAL_MODE_CURSOR=$ZVM_CURSOR_BLOCK
+#     # ZVM_OPPEND_MODE_CURSOR=$ZVM_CURSOR_UNDERLINE
+#     ZVM_VI_HIGHLIGHT_BACKGROUND=black
+# }
 
-source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+# source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh

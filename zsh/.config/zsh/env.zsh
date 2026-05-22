@@ -5,22 +5,17 @@ export XDG_CONFIG_HOME="$HOME/.config"
 export VISUAL=nvim
 export EDITOR=nvim
 export MANPAGER="nvim +Man!"
-
 export EMSDK_QUIET=1
 export CMAKE_EXPORT_COMPILE_COMMANDS=1
-
 export TIDAL_SRC_PATH="$HOME/dev/forks/tidal"
-
 export JAVA_HOME=$(/usr/libexec/java_home)
-
 export TOOLCHAIN_PATH=/Users/bss/dev/git/mutable-instruments/MI_FIRMWARE_COMPILING/ARM/
 export STM32_PRG_PATH=/Applications/STMicroelectronics/STM32Cube/STM32CubeProgrammer/STM32CubeProgrammer.app/Contents/MacOs/bin
-
 export ASAN_OPTIONS=detect_leaks=0
-
 export MallocNanoZone='0' # suppress warning when compiling via clang with address sanitizer
 
 path=(
+  $(brew --prefix)/opt/llvm/bin
   $HOME/.cargo/bin
   $HOME/.pyenv/bin
   $HOME/.local/bin
@@ -29,6 +24,7 @@ path=(
   $HOME/dev/git/emsdk
   $HOME/dev/git/emsdk/upstream/emscripten
   $HOME/scripts
+  $HOME/go/bin
   $path
 )
 

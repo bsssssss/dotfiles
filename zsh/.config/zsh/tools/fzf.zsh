@@ -7,9 +7,9 @@ export FZF_DEFAULT_OPTS="
     --height=~10%
     --layout reverse
     --style=minimal
-    --color=bg+:-1,info:magenta,spinner:magenta,fg:8,fg+:blue,border:0
+    --color=bg+:-1,info:magenta,spinner:magenta,fg:8,pointer:8,prompt:8,fg+:blue,border:0
     --gutter ' '
-    --pointer ' '
+    --pointer '>'
     --prompt ' '
     --no-info"
 
