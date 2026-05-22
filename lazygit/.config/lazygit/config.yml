@@ -6,7 +6,7 @@ gui:
 
     # Border color of non-focused windows
     inactiveBorderColor:
-      - "#888888"
+      - black
 
     # Border color of focused window when searching in that window
     searchingActiveBorderColor:
@@ -48,4 +48,4 @@ gui:
 
     # Default text color
     defaultFgColor:
-      - white
+      - default
