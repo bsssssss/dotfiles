@@ -1,7 +1,7 @@
 format = """
 $username$hostname \
 $directory\
-$git_branch$git_status$git_commit$git_metrics$git_state \
+$git_branch$git_status$git_commit$git_metrics$git_state\
 $python\
 $line_break\
 $character
